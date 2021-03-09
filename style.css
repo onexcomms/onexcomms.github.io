@@ -33,30 +33,30 @@
   }
   /*** Works on common browsers ***/
 ::selection {
-    background-color: #031d2b;
+    background-color: #02476d;
     color: #fff;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-    background-color: #031d2b;
+    background-color: #02476d;
     color: #fff;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-    background-color: #031d2b;
+    background-color: #02476d;
     color: #fff;
 }
 
 ::-ms-selection {
-    background-color: #031d2b;
+    background-color: #02476d;
     color: #fff;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-    background-color: #031d2b;
+    background-color: #051c2c;
     color: #fff;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .heroandnav {
-    background-color: #031d2b;
+    background-color: #02476d;
 }
 
 #herovid {
@@ -146,6 +146,8 @@ video {
     font-size: 75px;
     opacity: none;
     filter: brightness(100%);
+    animation: fadeInRightBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .heroone {
@@ -154,6 +156,8 @@ video {
     font-size: 100px;
     opacity: none;
     filter: brightness(100%);
+    animation: fadeInLeftBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 html {
@@ -166,14 +170,33 @@ html {
     color: white;
     transition: 0.3s;
     font-size: 25px;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s; /* don't forget to set a duration! */
     text-underline-offset: 6px;
+    border-color: #2251ff;
+    background-color: transparent;
+    border-width: 2px;
+    border-radius: 0%;
 }
 
 .downscroll:hover {
     text-decoration: none;
     color: white;
-    background-color: #428eeb;
+    background-color: #2251ff;
     box-shadow: 0 12px 12px 0 rgba(0,0,0,0.1);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s; /* don't forget to set a duration! */
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.1);
+    
+}
+
+.downscroll:active {
+    text-decoration: none;
+    color: white;
+    background-color: #2251ff;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.1);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s; /* don't forget to set a duration! */
 }
 
 .servicebody {
@@ -219,7 +242,7 @@ html {
   }
   
   .flip-card-back {
-    background-color: #031d2b;
+    background-color: #02476d;
     color: white;
     font-family: Light;
     transform: rotateY(180deg);
@@ -256,21 +279,21 @@ html {
     width: 150px;
     text-decoration: none;
     color: white;
-    background-color: #428eeb;
-    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.2);
-    border-color: #428eeb;
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 0px;
     font-family: Medium;
-    transition: 0.3s;
 }
 
 .sertocontbutton:hover {
     width: 150px;
-    text-decoration: underline 2px solid white;
+    text-decoration: none;
     color: white;
-    background-color: #428eeb;
-    border-color: #428eeb;
+    background-color: #2251ff;
+    border-color: #2251ff;
     font-family: Medium;
-    text-underline-offset: 3px;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 
 .withback {
@@ -279,13 +302,18 @@ html {
 }
 
 .serviceheader {
-    color: white; 
+    color: black; 
     font-family: Medium; 
     font-size: 60px; 
-    background-color: #031d2b;
+    background-color: white;
     border-radius: 5px;
+    border-top: 3px solid #2251ff;
+    border-bottom: 3px solid #2251ff;
+    border-left: 3px solid #2251ff;
+    border-right: 3px solid #2251ff;
 
 }
+
 
 .aboutbody {
     margin-right: 100px;
@@ -302,25 +330,49 @@ html {
 .aboutsubpara {
     font-family: Light;
     font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.aboutsubparaa {
+    font-family: Light;
+    font-size: 20px;
+    text-decoration: underline 2px solid #2251ff;
+    color: black;
+    transition: 0.2s;
+    text-underline-offset: 4px;
+}
+
+.aboutsubparaa:hover {
+    font-family: Light;
+    font-size: 20px;
+    text-decoration: underline 2px solid #2251ff;
+    color: #2251ff;
+    transition: 0.2s;
+    text-underline-offset: 4px;
 }
 
 .abouttocontbutton {
     width: 150px;
     text-decoration: none;
-    color: white;
-    background-color: #031d2b;
-    border-color: #031d2b;
+    color: black;
+    background-color: transparent;
+    border-color: #2251ff;
+    border-width: 2px;
+    border-radius: 0px;
     font-family: Medium;
 }
 
 .abouttocontbutton:hover {
     width: 150px;
-    text-decoration: underline 2px solid white;
+    text-decoration: none;
     color: white;
-    background-color: #428eeb;
-    border-color: #428eeb;
+    background-color: #2251ff;
+    border-color: #2251ff;
     font-family: Medium;
-    text-underline-offset: 3px;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+
 }
 
 .clientsbody {
@@ -331,11 +383,20 @@ html {
 }
 
 .footer {
-    background-color: #031d2b;
+    background-color: #02476d;
     color: white;
     padding-left: 100px;
     padding-right: 100px;
     height: 75px;
+    text-decoration: none;
+}
+.footer:hover {
+    background-color: #02476d;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 75px;
+    text-decoration: none;
 }
 
 .clihov {
@@ -346,7 +407,7 @@ html {
 
 .clihov:hover {
     text-decoration: none;
-    color: #428eeb;
+    color: #2251ff;
 }
 
 .clibr {
