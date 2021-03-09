@@ -131,7 +131,7 @@ video {
 }
 
 .justheroback {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url('heroback.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('heroback1.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
